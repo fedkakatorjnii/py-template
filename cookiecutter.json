@@ -1,0 +1,6 @@
+{
+  "project_name": "project",
+  "app_name": "{{ cookiecutter.project_name.lower().replace('-', '_') }}",
+  "name": "Python project",
+  "desctiption": "This is blank Python project."
+}

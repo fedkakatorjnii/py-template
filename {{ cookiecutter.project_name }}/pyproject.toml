@@ -5,3 +5,42 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
+
+# pyright
+[tool.pyright]
+venvPath = ".venv"
+venv = "."
+pythonVersion = "3.13"
+
+[tool.ty.src]
+root = "./src"
+
+[tool.ruff]
+src = ["src"]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle
+    "F",  # Pyflakes
+    "UP",  # pyupgrade
+    "B",  # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "I",  # isort
+    "N",  # pep8-naming
+    "FIX",
+    "FBT",
+    "ARG",
+    "PTH",
+    "ERA",
+    "RUF",
+]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+[tool.ruff.format]
+line-ending = "lf"
+
+[dependency-groups]
+dev = ["ruff>=0.7.3"]

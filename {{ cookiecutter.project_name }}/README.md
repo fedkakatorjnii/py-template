@@ -1,15 +1,3 @@
-# py-template
+# {{ cookiecutter.app_name }}
 
-Cookiecutter template
-
-## Install
-
-```
-pip install cookiecutter
-```
-
-or
-
-```
-uv tool install cookiecutter
-```
+{{ cookiecutter.desctiption }}
